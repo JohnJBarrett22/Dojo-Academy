@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+</head>
+<body>
+    <canvas id="my_canvas"></canvas>
+    <script>
+        let canvasElement = document.getElementById("my_canvas");
+        let canvasContext = canvasElement.getContext("2d");
+
+        canvasContext.lineWidth = 10;
+        canvasContext.strokeStyle = "blue";
+        canvasContext.strokeRect(10, 10, 70, 70);
+
+        canvasContext.fillStyle="red";
+        canvasContext.fillRect(30, 30, 40, 40);
+    </script>
+</body>
+</html>

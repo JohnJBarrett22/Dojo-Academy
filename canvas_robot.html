@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas Robot</title>
+</head>
+<body>
+    <canvas id="my_canvas"></canvas>
+    <script>
+        let canvasElement = document.getElementById('my_canvas');
+        let canvasContext = canvasElement.getContext('2d');
+        canvasContext.fillStyle = 'black';
+        canvasContext.fillRect(15, 30, 130, 50);
+        canvasContext.fillStyle = 'grey';
+        canvasContext.fillRect(30, 10, 100, 125);
+        canvasContext.fillStyle = 'black';
+        canvasContext.fillRect(50, 30, 20, 20);
+        canvasContext.fillStyle = 'black';
+        canvasContext.fillRect(90, 30, 20, 20);
+        canvasContext.fillStyle = 'black';
+        canvasContext.fillRect(45, 90, 70, 25);
+        canvasContext.fillStyle = 'white';
+        canvasContext.fillRect(47.5, 92.5, 65, 20);
+    </script>
+</body>
+</html>
