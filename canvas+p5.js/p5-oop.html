@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <title>p5-OOP</title>
+</head>
+<body>
+    <script>
+    var gravityAcceleration = 1;
+    var ball1;
+    var ballArray = [];
+    function setup(){
+        createCanvas(720, 480);
+        ball1 = new Ball(width/2, 0);
+    }
+    function draw() {
+        background(25);
+        ball1.move();
+        ball1.display();
+    }
+    function Ball(xPosition, yPosition){
+        this.x = xPosition;
+        this.y = yPosition;
+        this.diameter = 50;
+        this.speed = 0;
+        this.move = function(){
+            this.y += this.speed;
+            if (this.y >= (height-this.diameter/2)) {
+                this.y = height - this.diameter / 2;
+                this.speed = -0.9 * this.speed;
+            }else{
+                this.speed += gravityAcceleration;
+            }
+        }
+        this.display = function(){
+            ellipse(this.x, this.y, this.diameter, this.diameter);
+        }
+    }
+    </script>
+</body>
+</html>
