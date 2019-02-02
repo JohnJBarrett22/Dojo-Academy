@@ -9,4 +9,5 @@ class MainTest(unittest.TestCase):
         print("Hello from the tests")
     
     def test_sum_two(self):
-        print("Test 2 is working")
+        self.assertEqual(sum_two(5, 7), 12)
+        self.assertEqual(sum_two(-5, 5), 0)
