@@ -18,7 +18,7 @@ class AlbumTest(TestCase):
         self.assertEqual(res.status_code, 200)
         self.assertEqual(c.get('/add').status_code, 302)
         self.assertEqual(c.get('/delete').status_code, 302)
-        self.assertEqual(c.get('/edit').status_code, 302)
+        self.assertEqual(c.get('/edit/1').status_code, 200)
 
     def test_model_creation(self):
         a = Album.objects.create(title = "Dark Side of the Moon", artist = "Pink Floyd", year = 1973)
@@ -34,6 +34,7 @@ class AlbumTest(TestCase):
         for album in albums:
             self.assertEqual(album["year"], 1993)
 
+    # Integration Test
     def test_view_creation(self):
         c = Client()
         post_data = {
@@ -49,4 +50,8 @@ class AlbumTest(TestCase):
         self.assertEqual(a.year, post_data["year"])
 
     def test_view_edit(self):
-        pass
+        c = Client()
+        res = c.get("/edit/1")
+        print(res)
+        self.assertEqual(res.context["album"].id, 1)
+        
