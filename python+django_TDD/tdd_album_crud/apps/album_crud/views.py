@@ -5,6 +5,8 @@ def index(request):
     return render(request, "index.html")
 
 def add(request):
+    if request.method == "POST":
+        Album.objects.create(title = request.POST["title"], artist = request.POST["artist"], year = request.POST["year"])
     return redirect('/')
 
 def delete(request):

@@ -6,6 +6,7 @@ class AlbumTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         Album.objects.create(title = "Enter the Wu Tang", artist = "Wu Tang", year = 1993)
+        Album.objects.create(title = "I Don't Know", artist = "Alanais Morissette", year = 1993)
 
     def test_hello(self):
         print("I am in Django!")
@@ -27,4 +28,25 @@ class AlbumTest(TestCase):
 
     def test_get_album_model(self):
         a = Album.objects.get(id = 1)
-        print(a)
+        self.assertEqual(a.id, 1)
+        # self.assertEqual(Album.objects.get(title = "Enter the Wu Tang").title, "Enter the Wu Tang")
+        albums = Album.objects.filter(year = 1993).values("year")
+        for album in albums:
+            self.assertEqual(album["year"], 1993)
+
+    def test_view_creation(self):
+        c = Client()
+        post_data = {
+            "title" : "Debut",
+            "artist" : "Bjork",
+            "year" : 1993
+        }
+        res = c.post('/add', post_data)
+        self.assertEqual(res.status_code, 302)
+        a = Album.objects.last()
+        self.assertEqual(a.title, post_data["title"])
+        self.assertEqual(a.artist, post_data["artist"])
+        self.assertEqual(a.year, post_data["year"])
+
+    def test_view_edit(self):
+        pass
