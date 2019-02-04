@@ -1,0 +1,8 @@
+Injection is a very common form of online attack where any source of data can be utilized as a vector to send hostile data.
+Applications vulnerable to attack are more common with SQL, NoSQL, OS command, ORM, LDAP, EL or OGNL...though any type of input is vulnerable.
+With this knowledge in mind, it must be assumed that all data coming in is hostile and act accordingly with proper validation, filtration and sanitization of the input.
+Additionally, keeping data separate from commands and queries will help minimize risk, though there are several additional steps you can take depending on software stack being used to minimze exposure.
+
+The largest known injection attack amassed a total of 1.2 billion passwords from more than 420,000 websites using a simple SQL injection.
+An e-crime ring in Russia was able to pull off this feat in early 2013.
+Though injection is still common today, there has yet to be a breach quite as large.
