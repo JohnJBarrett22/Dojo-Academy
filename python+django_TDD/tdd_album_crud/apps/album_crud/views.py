@@ -16,4 +16,4 @@ def edit(request, id):
     context = {
         "album" : Album.objects.get(id = id)
     }
-    return render(request, "index.html", context)
+    return redirect('/')
