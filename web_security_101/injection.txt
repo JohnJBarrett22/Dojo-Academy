@@ -6,3 +6,5 @@ Additionally, keeping data separate from commands and queries will help minimize
 The largest known injection attack amassed a total of 1.2 billion passwords from more than 420,000 websites using a simple SQL injection.
 An e-crime ring in Russia was able to pull off this feat in early 2013.
 Though injection is still common today, there has yet to be a breach quite as large.
+
+Source: https://jaxenter.com/simple-sql-injection-vulnerability-to-blame-for-biggest-ever-theft-of-passwords-108002.html

@@ -1,0 +1,9 @@
+Broken authentication ranks in at #2 on OWASP's list of top vulnerabilities.
+Due to the design and implementation of most identity and access controls, the prevalence of broken authentication is widespread.
+Attack vectors include attempts to penetrate the system through credential stuffing, default administrative accounts not being secured, automated brute force and dictionary attack tools.\
+Once access is obtained to only a few accounts or possibly just one admin account, the entire system may be comprimised.
+The easiest and most successful counter to this to use multi-factor authentication.
+Additionally, do not ship/deploy any default credentials, include password strength level checks, limit failed login attempts and ensure proper session management.
+
+I can not currently find any article of a real world example of broken authentication or poor session management.
+I will continue to research examples while I progress through the other modules.
