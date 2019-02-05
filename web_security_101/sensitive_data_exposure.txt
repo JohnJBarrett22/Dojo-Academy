@@ -1,0 +1,11 @@
+Sensitive data exposure occurs when the attacker steals keys, executes man-in-the-middle attacks or steals clear text data off the server.
+Recently, this has been the most common impactful attack, targeting those that are not careful with their data transmission and protocols.
+Failures to properly secure data transmissions compromises all data in the system.
+Although this could be tragic, it is easily preventable by first determining the security/protection needs of the data in transit or at rest.
+Furthermore, by ensuring that data is not trasmitted in clear text, old cryptogtaphic systems are phased out to current security standards and that encryption is enforced, you can reduce your risk to sensitive data exposure drastically.
+
+A recent example of sensitive data exposure happened just last year, where Pocket iNet left an AWS s3 server exposed online without a password.
+Due to this lapse, 73 gigs of downloadable data which included passwords and other sensitive files were exposed online.
+This issue in Washington State was discovered October 11th, 2018 by Upguard's cyber-risk team. 
+
+https://www.infosecurity-magazine.com/news/pocket-inet-leaves-73-gb-of/
