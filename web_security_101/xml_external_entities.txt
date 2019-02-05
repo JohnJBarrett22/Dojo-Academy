@@ -1,0 +1,6 @@
+A vulnerability known as XML extenral entities, are exploitable if there is a vector to upload or include hostile content in an XML document.
+By doing so, attackers are able to exploit vulnerable code, dependencies or integrations.
+If utilized correctly, these flaws can be used to extract data, scan internal systems, perform DDOS attacksm execute remote requests from the server as well as other attacks.
+Any application, especially those with a XML-based web services are vulnerbale if the app accepts XML directly or via uploads.
+The best way to prevent these forms of attacks are to ensure the team's developers are trained properly, use JSON when possible, patch or upgrade XML processors and/or minimizing use of XML.
+
