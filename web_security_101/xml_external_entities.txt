@@ -4,3 +4,9 @@ If utilized correctly, these flaws can be used to extract data, scan internal sy
 Any application, especially those with a XML-based web services are vulnerbale if the app accepts XML directly or via uploads.
 The best way to prevent these forms of attacks are to ensure the team's developers are trained properly, use JSON when possible, patch or upgrade XML processors and/or minimizing use of XML.
 
+Dating back to a timeframe from 2013-2014, a hacker by the name of Austin Thompson spent countless hours attacking gaming servers with DOS attacks.
+His efforts successfully forced services offline and he would go on to boast about it through his Twitter handle @DerpTrolling.
+Due to the consistent attacks and online boasting of the attacks, the FBI launched an investigation ultimately leading to his arrest and presecution.
+Damage to a protected computer is a federal felony charge that comes with a 10 year prison sentence, $250,000 in fines and 3 years of supervised release.
+
+https://www.businessinsider.com/utah-hacker-pleads-guilty-denial-of-service-attacks-xbox-live-playstation-network-steam-2018-11
