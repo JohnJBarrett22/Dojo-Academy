@@ -1,0 +1,12 @@
+Security misconfirguartion is one of the most common ways for attackers to exploit or access an application/system.
+Unpatched flaws, default account access, unused pages, unprotected files/directories and other sources are all vectors that can give an attacker unauthorized access.
+Such flaws, could result in a complete system compromise.
+An easy way to prevent such attacks is ensuring that all environments are properly locked down and that the platform is minimalistic, free of unnecessary features, components, documentation or samples.
+Removing or avoiding installing bloat by means of unsused features or frameworks goes a long way!
+
+Just two years ago, Accenture, a leader in cloud technology inadvertently left four AWS S3 buckets open to the public.
+This laspe in security and awareness made all the contents in those buckets, available to anybody for download.
+Of the four buckets, the largest contained more than 137 gigabytes of data including credentials to datebases and over 40,000 plain word passwords, some belonging to Accenture customers.
+This is just one of many companies that have exposed client or sensitive data by improperly configuring the security settings, or failing to do so at all.
+
+https://www.healthcareitnews.com/news/accenture-latest-breach-client-data-due-misconfigured-aws-server
