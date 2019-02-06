@@ -1,0 +1,11 @@
+Broken access control is a common exploitation vector among attackers due to simplicity in finding the vulnerability.
+The impact attackers have when there is broken access control is the ability to act as administrators or users with privileged functions and potentially modify, alter or remove records.
+Applications are vulnerbale to this type of attack if there is no access control or the controls in place are not enforcing the polucy such that users are restrained by their access levels.
+This is rather easy to solve however, by implementing an enforced system of access control, either by a truster server-side or server-less API.
+
+A real world example of poor access control just occured this past year involving the USPS.
+Unfortunately, due to lack of enforcement an API weakness exposed account details for about 60 million users.
+Even though this was reported upon finding, it still went a whole year before it was ultimately patched.
+During that time frame, any logged in user within usps.com was able to query the system for account details such as email address, username, user ID, account number, address and more.
+
+https://www.forbes.com/sites/taylorarmerding/2018/12/05/its-past-time-to-pay-much-more-attention-to-api-security/#6c47484e49d5
