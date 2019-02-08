@@ -1,0 +1,12 @@
+Cross-site scripting is another prevelent form of attack that catches many unsuspecting users by suprise.
+Automated tools can easily detect XSS opportunities with older techncologies, such as PHP, J2EE/JSP and ASP.NET where malicious JS code can be uploaded.
+Once uploaded, these scripts would essentially run depending on the set up and vector, to retrieve information from the victim viewing the site and send it back to the attacker.
+The three major forms of cross-site scripting are reflected, stored and DOM XSS.
+These attacks can be prevented however, by using newer technologies and techniques such as escaping, filtering and validating.
+
+Dating back to 2017, eBay was still be actively hit with malicious scripts that plagued the the site years beforehand.
+Fraudsters took advantage of the vulnerabilities within eBay's site to steal account credentials and then use those stolen accounts to modify their listings with malicious code.
+When an unsuspecting user viewed the listing, they would be "kicked out" of the site and sent to a spoofed login page, where their credentials would then be stolen if they attempted to sign back in.
+Since victims are unlikely to expect a phising attack from within eBay's search results, the efficacy of these attacks are far greater than your average phishing scam.
+
+https://news.netcraft.com/archives/2017/02/17/hackers-still-exploiting-ebays-stored-xss-vulnerabilities-in-2017.html
