@@ -1,0 +1,12 @@
+Insecure deserialization is a term for malicious data that is sent via serialization, then is deserialized on the receiving end allowing the attacker's code to run its course.
+Deserialization flaws can have severe impacts, potentially leading to remote code execution, one of the most severe attacks possible.
+Applications and/or APIs are vulnerable to this type of attack if they are deserializing hostile data or tampered objects supplied by an attacker.
+Some tools can discover deserialization issues, but human intraction is frequently needed to validate the problem.
+In order to prevent these attacks do not accept serialized objects, only accept primative data types, implement integrity checks, enforce strict type contraints, deserialize in low privilege environemtns and/or monitor deserialization.
+
+In 2016, PayPal became a victim of deserialization when malicious code made its way to their Java-based, back-end system.
+The vulnerability is part of a class of bugs that stem from Java object deserialization and which security researchers had warned about a year prior.
+Fortuntely, that malicious code was sent over by a bounty hunter that was testing for flaws in in the manager.paypal.com application rather than someone who was out to do true harm.
+After the bounty hunter, Michael Stepankin, reported the issue to PayPal it got fixed and company rewarded him with compensation as part of their bug bounty program.
+
+https://www.pcworld.com/article/3026678/paypal-is-the-latest-victim-of-java-deserialization-bugs-in-web-apps.html
