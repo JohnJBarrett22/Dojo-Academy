@@ -1,0 +1,11 @@
+Using components with known vulernabilities seems like an obvious issue, but it is still quite common as updates occur and attackers look for outdated or older components out there.
+While it is easy to find already-written exploits for many known vulnerabilities, other vulnerabilities require concentrated effort to develop a custom exploit.
+Some bulnerabilities lead to only minor impacts, but some of the larger breaches to date have replied on exploiting known vectors.
+Applications that are vulnerable or those that are not kept current on versions of components in use, run on outdated legacy software, lack essential scanning for vectors or where patches aren't happening regularly.
+An easy fix for this to remove unused dependancies/components, keep inventory of versions in use and their vulnerabilities for update tracking, only use official components and monitor if any are phased out.
+
+Recently, Equifax fell victim to a completely preventable attack that exposed the personal data of over 143 million people.
+Even though a patch for the web-application vulnerability came out in March of the year of the breach, attackers managed to get through in mid-May due to poor response time.
+This means Equifax has approximately two months to address the issue, but failed to do so putting millions of people at risk.
+
+https://www.wired.com/story/equifax-breach-no-excuse/
