@@ -1,0 +1,12 @@
+Exploitation of insufficient logging and monitoring is the bedrock of nearly every major incident and is something that should not be overlooked.
+Most successful attacks start with vulnerability probing; allowing such probes to continue can raise the likelihood of successful exploit to nearly 100%.
+Applications are vulnerable if there is insufficient logging, detection, monitoring or active response.
+Additionally, even if you did log the events, if your architecture is not set up correctly, you could be providing these logs to the very attacker your are trying to monitor.
+In order to prevent this vector, ensure all login, access control and server-side input can be logged/monitored in real time sufficiently.
+Furthermore, having plans in place on how to handle an incident can be paramont in minimizing risk and exposure.
+
+Just a few months ago, Morgan Stanley was required to pay a $14M fine due to insufficient fraud monitoring.
+This fine stems from allegations that for more than five years its anti-money laundering program failed to appropiately monitor tens of billions of dollars in transactions that ran through brokerage accounts.
+While this may not have been done online, the software systems in place should have been set to monitor these processes to prevent such activity.
+
+https://www.straitstimes.com/business/banking/morgan-stanley-to-pay-14m-fine-over-insufficient-fraud-monitoring
