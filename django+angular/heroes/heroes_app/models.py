@@ -29,3 +29,5 @@ class Hero(models.Model):
     image = models.CharField(max_length=255)
 
     objects = HeroManager()
+
+    #Hello test!
